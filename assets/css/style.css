@@ -95,9 +95,3 @@ button:active {
 .resetButton:active {
     background-color: var(--resetButtonColor);
 }
-
-@media screen (max-width:990px) {
-    #counterBox: {
-        width: 400px;
-    }
-}
