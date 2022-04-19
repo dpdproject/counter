@@ -23,4 +23,6 @@
 <h2>Contact</h2>
 <p>David Piredda, davidpiredda@me.com</p>
 
-Project link: https://github.com/dpdproject/counter
+Github link: https://github.com/dpdproject/counter
+
+Project link: https://dpdproject-counter.netlify.app
