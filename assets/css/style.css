@@ -1,0 +1,103 @@
+:root {
+    --mainBackgroudColor: rgb(151, 179, 226);
+    --mainShadow: 10px 10px 20px rgba(187, 187, 187, 0.4);
+    --mainRadiusBorder: 15px;
+
+    --buttonColor: rgb(176, 194, 225);
+    --hoverbuttonColor: rgb(80, 107, 154);
+    --resetButtonColor: rgb(154, 72, 72);
+    --hoverResetButtonColor: rgb(101, 24, 24);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1 {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#counterBox {
+    height: 300px;
+    width: 600px;
+    border-radius: var(--mainRadiusBorder);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--mainBackgroudColor);
+    box-shadow: var(--mainShadow)
+}
+
+.screen {
+    height: 150px;
+    border-radius: var(--mainRadiusBorder);
+    background-color: aliceblue;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    font-size: 5rem;
+}
+
+.buttonContainer {
+    height: 100px;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+button {
+    height: 3rem;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    background-color: var(--buttonColor);
+}
+button:hover {
+    background-color: var(--hoverbuttonColor);
+}
+button:focus,
+button:active {
+    background-color: var(--buttonColor);
+}
+
+.resetButton {
+    background-color: var(--resetButtonColor);
+    color: white;
+}
+.resetButton:hover {
+    background-color: var(--hoverResetButtonColor);
+}
+.resetButton:focus,
+.resetButton:active {
+    background-color: var(--resetButtonColor);
+}
+
+@media screen (max-width:990px) {
+    #counterBox: {
+        width: 400px;
+    }
+}
